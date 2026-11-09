@@ -1,0 +1,31 @@
+# ---------------------------------------------------------------------------
+# Hush — files that must never be pushed to the public repository
+# ---------------------------------------------------------------------------
+
+# Gradle caches and build output
+.gradle/
+build/
+app/build/
+.externalNativeBuild/
+.cxx/
+captures/
+
+# Local machine configuration
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# Signing secrets — never commit or share these
+keystore.properties
+*.jks
+*.keystore
+
+# Built packages (the APK is attached to GitHub Releases, not committed)
+*.apk
+*.aab
+Hush-release.apk
+Hush-v*.apk
+
+# Local-only notes and drafts
+TERMINAL_BUILD_GUIDE*.md

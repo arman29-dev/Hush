@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512" role="img" aria-label="Hush app logo">
+  <title>Hush</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E2A4D"/>
+      <stop offset="1" stop-color="#0B0F1C"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#7DD3FC"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#5EEAD4" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#E0E7FF"/>
+      <stop offset="1" stop-color="#A5B4FC"/>
+    </radialGradient>
+  </defs>
+
+  <!-- tile -->
+  <rect width="108" height="108" rx="25" fill="url(#bg)"/>
+  <circle cx="54" cy="54" r="38" fill="url(#glow)"/>
+
+  <!-- rings: the further out, the more the noise is broken up -->
+  <g fill="none" stroke="url(#ring)" stroke-width="3.2" stroke-linecap="round">
+    <circle cx="54" cy="54" r="28" pathLength="100" stroke-dasharray="45 55"
+            transform="rotate(108 54 54)" opacity="0.35"/>
+    <circle cx="54" cy="54" r="20" pathLength="100" stroke-dasharray="66 34"
+            transform="rotate(54 54 54)" opacity="0.65"/>
+    <circle cx="54" cy="54" r="12" pathLength="100" stroke-dasharray="80 20"/>
+  </g>
+
+  <!-- calm centre -->
+  <circle cx="54" cy="54" r="6" fill="url(#orb)"/>
+</svg>
